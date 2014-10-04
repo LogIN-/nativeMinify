@@ -1,0 +1,43 @@
+{
+  "name": "native-minify",
+  "description": "Javascript code minify as native node add-on",
+  "version": "0.1.6",
+  "homepage": "https://github.com/LogIN-/nativeMinify",
+  "author": {
+    "name": "LogIN-"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build",
+    "test": "node main.js"
+  },
+  "keywords": [
+    "javascript",
+    "minify",
+    "code",
+    "minify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LogIN-/nativeMinify.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-pre-gyp": "0.5.x"
+  },
+  "bundledDependencies": [
+    "node-pre-gyp"
+  ],
+  "engines": {
+    "node": ">= 0.8.0 < 0.11.0 || >= 0.11.13 < 0.13.0"
+  },
+  "engineStrict": false,
+  "bugs": {
+    "url": "https://github.com/LogIN-/nativeMinify/issues"
+  },
+  "binary": {
+    "module_name": "nativeMinify",
+    "module_path": "./lib/binding/",
+    "host": "https://your_module.s3-us-west-1.amazonaws.com"
+  }
+}
